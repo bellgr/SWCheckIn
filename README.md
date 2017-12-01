@@ -16,3 +16,7 @@ Installation:
 
 1. Install Python and Selenium 
 2. Get the latest chromedriver or use the one included
+3. Place the python script and the chromedriver in the same directory
+4. Run the command or schedule anytime prior to 24 hour check-in window
+
+NOTE: The script is dependent on specific UI elements in the Southwest website so it can break at anytime. I will do my best to keep it updated. 
