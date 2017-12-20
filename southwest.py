@@ -72,15 +72,15 @@ def check_in():
     tooEarly = True 
     while tooEarly:
         try:
-         time.sleep(5)
-             driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-             second_check_in = driver.find_element_by_class_name("air-check-in-review-results--check-in-button")
-         second_check_in.click()    
-         tooEarly = False
-    except NoSuchElementException:
-             time.sleep(5)
-             first_check_in.click()
-             continue
+            time.sleep(5)
+            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+            second_check_in = driver.find_element_by_class_name("air-check-in-review-results--check-in-button")
+            second_check_in.click()    
+            tooEarly = False
+        except NoSuchElementException:
+            time.sleep(5)
+            first_check_in.click()
+            continue
     time.sleep(0.5)
 
     textBoardingPass = driver.find_element_by_class_name("boarding-pass-options--button-text")
